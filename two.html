@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function() {
+
+
+            $(".sidebar-item").toggleClass("active");
+
+            function toggleSidebar() {
+                $(".button").toggleClass("active");
+                $("main").toggleClass("move-to-left");
+                $(".sidebar-item").toggleClass("active");
+            }
+
+            $(".button").on("click tap", function() {
+                toggleSidebar();
+            });
+
+            $(document).keyup(function(e) {
+                if (e.keyCode === 27) {
+                    toggleSidebar();
+                }
+            });
+
+        });
+    </script>
+
+
+    <main>
+
+
+        <nav>
+
+            <div class="nav-right">
+                <div class="button">
+                    <div class="bar top" id="bar1"></div>
+                    <div class="bar middle" id="bar2"></div>
+                    <div class="bar bottom" id="bar3"></div>
+                </div>
+
+
+            </div>
+            <div class="hBar">
+                <div class="title" id="headNav">
+                    <p id="pgr" style="color:#325331">Two</p>
+                </div>
+
+                <input id="search" type="text" value="Search.." class="inactive" onFocus="toggleText(this);" onBlur="toggleText(this);">
+
+                <div class="dropdown">
+                    <button class="dropbtn" id="dropbtn" style="color: white;">Theme</button>
+                    <div class="dropdown-content">
+                        <a id="c1" onClick="getColor(this);" href="#" style="background-color:#9f0000"></a>
+                        <a id="c2" onClick="getColor(this);" href="#" style="background-color:#170057"></a>
+                        <a id="c3" onClick="getColor(this);" href="#" style="background-color:#687600"></a>
+                        <a id="c4" onClick="getColor(this);" href="#" style="background-color:#325331"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+        <section class="section" id="sect">
+            <div class="art1">
+                <h4 class="t">Sales</h4>
+                <h5 class="st">01/08/2018 - 31/12/2018</h5>
+                <div class="content"></div>
+            </div>
+
+            <div class="art1">
+                <h4 class="t">Sales</h4>
+                <h5 class="st">01/08/2018 - 31/12/2018</h5>
+                <div class="content"></div>
+            </div>
+
+            <div class="art1">
+                <h4 class="t">Sales</h4>
+                <h5 class="st">01/08/2018 - 31/12/2018</h5>
+                <div class="content"></div>
+            </div>
+
+            <div class="art2">
+                <h4 class="t">Sales</h4>
+                <h5 class="st">01/08/2018 - 31/12/2018</h5>
+                <div class="content"></div>
+            </div>
+
+            <div class="art1">
+                <h4 class="t">Sales</h4>
+                <h5 class="st">01/08/2018 - 31/12/2018</h5>
+                <div class="content"></div>
+            </div>
+
+            <div class="art3">
+                <h4 class="t">Sales</h4>
+                <h5 class="st">01/08/2018 - 31/12/2018</h5>
+                <div class="contentr"></div>
+            </div>
+
+            <div class="art3">
+                <h4 class="t">Sales</h4>
+                <h5 class="st">01/08/2018 - 31/12/2018</h5>
+                <div class="contentr"></div>
+            </div>
+
+            <div class="art3">
+                <h4 class="t">Sales</h4>
+                <h5 class="st">01/08/2018 - 31/12/2018</h5>
+                <div class="contentr"></div>
+            </div>
+
+            <div class="art1">
+                <h4 class="t">Sales</h4>
+                <h5 class="st">01/08/2018 - 31/12/2018</h5>
+                <div class="content"></div>
+            </div>
+
+
+            <div class="art2">
+                <h4 class="t">Sales</h4>
+                <h5 class="st">01/08/2018 - 31/12/2018</h5>
+                <div class="content"></div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <div class="sidebar" id="sidebar" style="background-color: #325331">
+
+        <div class="sidebar-anchor" id="logo"></div>
+        <div class="sidebar-anchor" id="user">John Doe</div>
+
+        <ul class="sidebar-list">
+
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-anchor"></a>
+            </li>
+            <li class="sidebar-item"><a href="index.html" class="sidebar-anchor">Dashboard</a></li>
+            <li class="sidebar-item"><a href="two.html" class="sidebar-anchor">Two</a></li>
+            <li class="sidebar-item"><a href="three.html
+            " class="sidebar-anchor">Three</a></li>
+            <li class="sidebar-item"><a href="four.html
+            " class="sidebar-anchor">Four</a></li>
+            <li class="sidebar-item"><a href="five.html
+            " class="sidebar-anchor">Five</a></li>
+            <li class="sidebar-item"><a href="six.html
+            " class="sidebar-anchor">Six</a></li>
+            <li class="sidebar-item"><a href="seven.html
+            " class="sidebar-anchor">Seven</a></li>
+            <li class="sidebar-item"><a href="eight.html
+            " class="sidebar-anchor">Eigth</a></li>
+            <li class="sidebar-item"><a href="nine.html
+            " class="sidebar-anchor">Nine</a></li>
+
+
+
+        </ul>
+    </div>
+
+</body>
+
+</html>
